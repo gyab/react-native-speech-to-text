@@ -1,0 +1,31 @@
+{
+  "name": "react-native-speech-to-text",
+  "version": "0.0.2",
+  "description": "React Native module that allows you to call native speech recognition API and to get the recognized text in return. This is a work in progress since it only works on Android for now. The work on iOS is nearly finished.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anmary/react-native-speech-to-text.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "speech",
+    "to",
+    "text",
+    "speech",
+    "text",
+    "siri",
+    "ok",
+    "google"
+  ],
+  "author": "Antoine Mary",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anmary/react-native-speech-to-text/issues"
+  },
+  "homepage": "https://github.com/anmary/react-native-speech-to-text#readme"
+}
