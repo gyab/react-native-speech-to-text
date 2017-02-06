@@ -9,23 +9,39 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
+  Platform,
+  TouchableHighlight,
+  NativeModules,
   View
 } from 'react-native';
 
+let sttAndroid =  NativeModules.SpeechToText;
+
 export default class examples extends Component {
+
+
+
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+        <TouchableHighlight onPress={() => {
+          if(Platform.OS === 'android') {
+              sttAndroid.showGoogleInputDialog()
+                  .then((result) => {
+                      console.log(result)
+                  })
+                  .catch((error) => {
+                      console.log(error)
+                  })
+          } else if(Platform.OS === 'ios') {
+              sttIOS.startRecording();
+              //sttIOS.callbackMethod((err,r) => console.log(r.success));
+          }
+        }}>
+            <Text>
+                Click here to test the speech to text functionality
+            </Text>
+        </TouchableHighlight>
       </View>
     );
   }
@@ -37,11 +53,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
   },
   instructions: {
     textAlign: 'center',

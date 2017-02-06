@@ -9,7 +9,7 @@ Run `npm i react-native-speech-to-text --save`
 
 #### Automatic installation
 
-`react-native link react-native-splash-screen` or `rnpm link react-native-splash-screen`
+`react-native link react-native-speech-to-text`
 
 ## Getting started  
 

@@ -1,3 +1,5 @@
 rootProject.name = 'examples'
+include ':react-native-speech-to-text'
+project(':react-native-speech-to-text').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-speech-to-text/android')
 
 include ':app'

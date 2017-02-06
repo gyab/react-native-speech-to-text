@@ -3,7 +3,6 @@ package com.speechtotext;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
-import com.cboy.rn.splashscreen.SplashScreen;
 
 import java.util.Arrays;
 import java.util.List;
