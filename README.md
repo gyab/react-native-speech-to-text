@@ -15,6 +15,6 @@ Run `npm i react-native-speech-to-text --save`
 
 ## Getting started  
 
-import { STTandroid, STTios } from 'react-native-speech-to-text';
+`import { STTandroid, STTios } from 'react-native-speech-to-text';`
 
 
