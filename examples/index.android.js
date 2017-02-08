@@ -15,24 +15,23 @@ import {
   View
 } from 'react-native';
 
-let sttAndroid =  NativeModules.SpeechToText;
+import { STTandroid, STTios } from 'react-native-speech-to-text';
 
 export default class examples extends Component {
-
-
 
   render() {
     return (
       <View style={styles.container}>
         <TouchableHighlight onPress={() => {
           if(Platform.OS === 'android') {
-              sttAndroid.showGoogleInputDialog()
+              STTandroid.showGoogleInputDialog()
                   .then((result) => {
                       console.log(result)
                   })
                   .catch((error) => {
                       console.log(error)
                   })
+
           } else if(Platform.OS === 'ios') {
               sttIOS.startRecording();
               //sttIOS.callbackMethod((err,r) => console.log(r.success));

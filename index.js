@@ -1,6 +1,6 @@
 import { NativeModules } from 'react-native';
 
-let sttAndroid =  NativeModules.SpeechToText;
-let sttIOS =  NativeModules.SpeechTT;
+let STTandroid =  NativeModules.SpeechToText;
+let STTios =  NativeModules.SpeechTT;
 
-export { sttAndroid, sttIOS };
+export { STTandroid, STTios };

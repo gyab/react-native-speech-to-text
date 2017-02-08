@@ -15,12 +15,6 @@ Run `npm i react-native-speech-to-text --save`
 
 ## Getting started  
 
-Import `react-native-speech-to-text` in your JS file.
+import { STTandroid, STTios } from 'react-native-speech-to-text';
 
-`import { NativeModules } from 'react-native';`
-   
-`let sttAndroid =  NativeModules.SpeechToText;`
-`let sttIOS =  NativeModules.SpeechTT;`
-   
-`export { sttAndroid, sttIOS };` 
 
