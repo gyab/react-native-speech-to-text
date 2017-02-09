@@ -17,4 +17,14 @@ Run `npm i react-native-speech-to-text --save`
 
 `import { STTandroid, STTios } from 'react-native-speech-to-text';`
 
+```
+(Platform.OS === 'android') {
+   STTandroid.showGoogleInputDialog()
+       .then((result) => {
+           console.log(result)
+       })
+       .catch((error) => {
+           console.log(error)
+       })
 
+} 
