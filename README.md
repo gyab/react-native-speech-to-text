@@ -1,6 +1,6 @@
 # React Native Speech to Text
 
-React Native module that allows an React Native application to call native speech recognition APIs and to get the recognized text in return. This is a work in progress since it only works on Android. Although the work on iOS is almost finished.
+React Native module that allows an React Native application to call native speech recognition APIs and to get the recognized text in return.
 
 ## Installation
 
